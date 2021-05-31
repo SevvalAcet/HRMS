@@ -10,7 +10,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="job_positions")
+@Table(name="Job_Positions")
 public class JobPosition {
 
 @Id
@@ -18,17 +18,14 @@ public class JobPosition {
 @Column(name="id")
 private int id;
 
-@Column(name="userId")
-private int userId;
 
 @Column(name="name")
 private String name;
 
 
-public JobPosition(int id, int userId, String name) {
+public JobPosition(int id, String name) {
 	super();
 	this.id = id;
-	this.userId = userId;
 	this.name = name;
 }
 
